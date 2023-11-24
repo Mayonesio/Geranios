@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mataplantas.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link id="estiloHoja" rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <div>
+        <header class="header">
+            <!-- en este nav ponemos el contenedor del menu, sin items todavia -->
+            <nav class="barra">
+                <a href="#">mataplantas.com</a>
+                
+                <button id="toggleBtn" class="button--modoOscuro"><svg class="svg-icon" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><g stroke="#bf4f4e" stroke-linecap="round" stroke-width="1.5"><path d="m3.33337 10.8333c0 3.6819 2.98477 6.6667 6.66663 6.6667 3.682 0 6.6667-2.9848 6.6667-6.6667 0-3.68188-2.9847-6.66664-6.6667-6.66664-1.29938 0-2.51191.37174-3.5371 1.01468"></path><path d="m7.69867 1.58163-1.44987 3.28435c-.18587.42104.00478.91303.42582 1.0989l3.28438 1.44986"></path></g></svg>
+                    <span class="lableIt">Modo visual</span></button>
+                 
+                <!--Burger Menú-->
+                <input class="menu__btn" type="checkbox" id="menu__btn" />
+                <label class="menu__icon" for="menu__btn"><span class="navicon"></span> </label>  
+                <!--Menú-->
+                <ul class="menu">
+                    <a class="menu__item">ABONO</a>
+                    <a class="menu__item">SUSTRATO</a>
+                    <a class="menu__item">RIEGO</a>
+                    <a class="menu__item">CONTACTO</a>
+                </ul>      
+            </nav>
+        </header>
+        <!-- contendor de la zona hero -->
+        <section class="hero">
+                <img id="imagenPrincipal" src="images/geranio9.jpg" alt="Geranio muy grande">
+            <div class="heroGeranium">
+                <a class="gigante">GE<BR>RA   <br>NIUM</a>
+                <p class="descripcionGeranio__hero">El género Geranium, comúnmente llamado geranio, agrupa 422 especies de plantas anuales, bienales y perennes frecuentemente utilizadas en jardinería por sus atractivas flores y su aroma característico</p>
+            </div>
+        </section>
+        <div class="barrRosa"></div>
+        <!-- zona secundaria secci{on fotos -->
+        <section class="infoGeranio">
+            <article class="descripcionGeranio">
+                <p class="descripcionGeranio__p1">Según su uso paisajístico se las clasifica como herbáceas, respecto de arbustivas y arbóreas.
+                </p>
+                <div class="intercambio">
+                    <button id="geran" class="button" onclick="">SIGUIENTE</button>
+                    <button id="geranio" class="button" onclick="slideTwo()">ANTERIOR</button>
+                </div>
+            </article>
+            <picture id="cambioSlide" class="slide">
+                <img src="images/geranio7.jpg" alt="geranio rojo" class="slideGeranio">
+                <!-- <img src="images/geranios8.jpg" alt="geranio blanco" class="slideGeranio"> -->
+                <p class="descripcionGeranio__p2 slideGeranio">Muchas especies aquí agrupadas, poseen fitotoxinas, lo cual hace que otras herbáceas encuentren dificultades en penetrar plantaciones ya establecidas de una especie determinada de este género. Por ello se las reconoce como confiables tapizantes.</p>
+                <!-- <img src="images/geranios7.jpg" alt="pelargonio blanco" class="slideGeranio"> -->
+               
+
+            </picture>
+        </section>
+    </div>
+    <!-- zona de promoción -->
+    <div>
+        <div class="barrVerde"></div>
+        <section class="descuento">
+            <div class="porcentaje"><a>50%</a></div>
+             <p class="textoPromo__porcentaje">Si traes el geranio que<a class="mataste"> <BR>MATASTE!!</a></p>
+            <button class="button" role="link" onclick="window.location='formulario.html' ">SOY CULPABLE</button>
+        </section>
+        <div class="barrVerdeBaja"><a class="textoBarra___medio">...y para que no te vuelva a pasar</a></div>
+    </div>
+
+    <!-- zona de venta cruzada -->
+
+    <div class="cruzada">
+            <span class="icon">
+                <svg width="150" height="150" viewBox="0 0 222 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.75 138.75C31.3942 138.75 35.0027 138.032 38.3695 136.638C41.7363 135.243 44.7954 133.199 47.3722 130.622C49.949 128.045 51.9931 124.986 53.3877 121.619C54.7822 118.253 55.5 114.644 55.5 111C55.5 118.36 58.4237 125.418 63.6278 130.622C68.8319 135.826 75.8902 138.75 83.25 138.75C90.6098 138.75 97.6681 135.826 102.872 130.622C108.076 125.418 111 118.36 111 111C111 118.36 113.924 125.418 119.128 130.622C124.332 135.826 131.39 138.75 138.75 138.75C146.11 138.75 153.168 135.826 158.372 130.622C163.576 125.418 166.5 118.36 166.5 111C166.5 118.36 169.424 125.418 174.628 130.622C179.832 135.826 186.89 138.75 194.25 138.75C201.61 138.75 208.668 135.826 213.872 130.622C219.076 125.418 222 118.36 222 111C222 172.305 172.305 222 111 222C49.6947 222 0 172.305 0 111C0 118.36 2.92365 125.418 8.12779 130.622C13.3319 135.826 20.3902 138.75 27.75 138.75ZM133.2 49.95C133.2 55.8378 130.861 61.4845 126.698 65.6478C122.534 69.8111 116.888 72.15 111 72.15C105.112 72.15 99.4655 69.8111 95.3022 65.6478C91.1389 61.4845 88.8 55.8378 88.8 49.95C88.8 37.6845 111 0 111 0C111 0 133.2 37.6845 133.2 49.95Z" fill="#BF4F4E"/>
+                </svg>
+                <a href="#">RIEGO</a>
+            </span>
+            <span class="icon">
+                <svg width="134" height="134" viewBox="0 0 213 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M209.689 57.3031L155.538 3.09682C153.544 1.11333 150.848 0 148.037 0C145.227 0 142.53 1.11333 140.537 3.09682C139.54 4.08683 138.749 5.26469 138.208 6.56244C137.668 7.86019 137.39 9.25215 137.39 10.658C137.39 12.0639 137.668 13.4558 138.208 14.7536C138.749 16.0513 139.54 17.2292 140.537 18.2192L159.58 37.7079L101.919 95.8546L91.2801 85.205C88.3149 82.2266 84.7916 79.8633 80.9122 78.2508C77.0327 76.6383 72.8734 75.8082 68.6728 75.8082C64.4722 75.8082 60.3129 76.6383 56.4335 78.2508C52.554 79.8633 49.0307 82.2266 46.0656 85.205L9.36214 121.627C6.38491 124.603 4.02505 128.14 2.41834 132.033C0.811629 135.925 -0.0102149 140.098 9.58266e-05 144.31V181.051C9.58266e-05 189.525 3.36267 197.651 9.3481 203.642C15.3335 209.634 23.4515 213 31.9162 213H68.6196C72.8274 213.01 76.9957 212.188 80.8847 210.579C84.7737 208.971 88.3065 206.609 91.2801 203.628L127.664 167.1C130.64 164.132 133.001 160.605 134.611 156.722C136.222 152.838 137.052 148.675 137.052 144.47C137.052 140.265 136.222 136.101 134.611 132.218C133.001 128.335 130.64 124.808 127.664 121.84L117.026 111.19L175.113 53.2563L194.582 72.745C195.571 73.7432 196.747 74.5355 198.044 75.0761C199.34 75.6168 200.731 75.8951 202.135 75.8951C203.54 75.8951 204.93 75.6168 206.227 75.0761C207.523 74.5355 208.7 73.7432 209.689 72.745C210.735 71.7501 211.568 70.5526 212.137 69.2253C212.706 67.8979 213 66.4686 213 65.0241C213 63.5796 212.706 62.1502 212.137 60.8229C211.568 59.4956 210.735 58.298 209.689 57.3031ZM112.77 151.978L76.1731 188.612C75.179 189.599 74.0001 190.38 72.7039 190.91C71.4077 191.44 70.0198 191.709 68.6196 191.701H31.9162C29.0946 191.701 26.3886 190.579 24.3935 188.582C22.3983 186.584 21.2775 183.876 21.2775 181.051V144.31C21.2694 142.909 21.5377 141.519 22.0672 140.222C22.5966 138.924 23.3767 137.744 24.3627 136.749L60.9598 100.114C62.9531 98.1309 65.6495 97.0176 68.4601 97.0176C71.2707 97.0176 73.9671 98.1309 75.9603 100.114L86.599 110.764L77.1306 120.349C75.1491 122.344 74.0369 125.043 74.0369 127.857C74.0369 130.67 75.1491 133.369 77.1306 135.365C78.1746 136.404 79.4229 137.215 80.7963 137.747C82.1698 138.279 83.6385 138.519 85.1096 138.453C87.9006 138.441 90.5751 137.332 92.5567 135.365L102.132 125.886L112.77 136.536C113.816 137.531 114.649 138.728 115.219 140.056C115.788 141.383 116.082 142.812 116.082 144.257C116.082 145.701 115.788 147.131 115.219 148.458C114.649 149.785 113.816 150.983 112.77 151.978Z" fill="#BF4F4E"/>
+                </svg>
+                <a href="#">SUSTRATO</a>
+            </span>
+            <span class="icon">
+                <svg width="140" height="140" viewBox="0 0 164 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M70.2857 23.4118H93.7143V46.8235H70.2857V23.4118ZM0 199H46.8571V58.5294H0V199ZM105.429 70.2353H128.857V46.8235H105.429V70.2353ZM140.571 58.5294H164V35.1176H140.571V58.5294ZM140.571 0V23.4118H164V0H140.571ZM105.429 35.1176H128.857V11.7059H105.429V35.1176ZM140.571 93.6471H164V70.2353H140.571V93.6471ZM0 23.4118H3.86571L11.7143 46.8235H35.1429L42.9914 23.4118H46.8571V11.7059H0V23.4118Z" fill="#BF4F4E"/>
+                </svg>
+                <a href="#">ABONO</a>
+            </span>
+        <div class="botones__cruzada--mobile">
+        <button class="button" role="link" onclick="window.location='formulario.html' ">ABONO <img src="./images/abono.svg" alt="icono abono"></button>
+        <button class="button" role="link" onclick="window.location='formulario.html' ">SUSTRATO<img src="./images/sustrato.svg" alt="icono abono"></button>
+        <button class="button" role="link" onclick="window.location='formulario.html' ">RIEGO<img src="./images/riego.svg" alt="icono abono"></button>
+
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="footer">
+        <span class="hojaFooter">
+        <svg width="12" height="24" viewBox="0 0 35 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.4477 10.2059C20.3601 5.60863 17.6768 1.01139 17.1622 0H17.0519C16.5373 0.96542 13.854 5.60863 10.7664 10.2059C-15.6991 52.4545 14.9567 80.9574 14.9567 80.9574L15.214 81.1873C15.4346 85.5546 16.0227 91.8988 16.0227 91.8988H18.3017C18.3017 91.8988 18.853 85.6006 19.0736 81.1873L19.3309 80.9114C19.3309 80.9114 49.9132 52.4545 23.4477 10.2059ZM17.0519 80.3138C16.4077 79.6519 15.8168 78.9128 15.2876 78.1071L17.0519 32.1347L18.706 78.1071C18.2101 78.9048 17.6564 79.6435 17.0519 80.3138Z" fill="#F2F2F2"/>
+        </svg>
+        <a href="#">mataplantas.com</a>
+        </span> 
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
