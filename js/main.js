@@ -19,7 +19,7 @@ document.getElementById("toggleBtn").addEventListener("click", function() {
 
      // Definir las imágenes alternativas
      var imagenClara = "images/geranio9.png";
-     var imagenOscura = "images/geranioOscuro.jpg";
+     var imagenOscura = "images/geranioOscuro3.png";
  
      // Cambiar a la imagen alternativa
      if (imagenActual === imagenClara) {
